@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">s236305</string>
+    <string name="gametitle">School Hangman</string>
+    <string name="playgame">SPILL</string>
+    <string name="rules">REGLER</string>
+     <string name="hangmanRulesVertical">
+        \n1. Applikasjonen velger ut et ord for deg å gjette. \n\n
+        2. Bruker gjetter på en bokstav fra alfabetet \n\n
+        3. Applikasjonen finner ut om bokstaven er i ordet, og tegner enten neste steg i hengingen
+         eller fyller inn bokstaven i ordet. \n\n
+        4. Dette fortsetter til personen enten er hengt eller ordet er gjettet.
+
+    </string>
+    <string name="hangmanRulesHorizonal">
+        \n1. Applikasjonen velger ut et ord for deg å gjette. \n\n
+        2. Bruker gjetter på en bokstav fra alfabetet \n\n
+        3. Applikasjonen finner ut om bokstaven er i ordet, og enten tegner neste steg i hengingen
+         eller fyller inn bokstaven i ordet. \n\n
+        4. Dette fortsetter til personen enten er hengt eller ordet er gjettet.
+
+    </string>
+    <string name="language">SPRÅK</string>
+    <string name="exit">AVSLUTT</string>
+    <string name="ok">OK</string>
+    <string name="yes">JA</string>
+    <string name="no">NEI</string>
+    <string name="gameover">SPILL OVER</string>
+    <string name="gamewon">SPILL VUNNET</string>
+    <string name="word">Ordet var:  </string>
+    <string name="usedUpWords">DU HAR BRUKT ALLE ORDENE I SPILLET</string>
+    <string name="returnToStart">Du vil bli sendt tilbake til hovedvinduet</string>
+    <string name="fortsette">Vil du spille et nytt spill?</string>
+    <string name="wins">Seiere:</string>
+    <string name="losses">Tap:</string>
+    <string name="langText">VENNLIGST VELG ØNSKET SPRÅK</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="D">D</string>
+    <string name="E">E</string>
+    <string name="F">F</string>
+    <string name="G">G</string>
+    <string name="H">H</string>
+    <string name="I">I</string>
+    <string name="J">J</string>
+    <string name="K">K</string>
+    <string name="L">L</string>
+    <string name="M">M</string>
+    <string name="N">N</string>
+    <string name="O">O</string>
+    <string name="P">P</string>
+    <string name="Q">Q</string>
+    <string name="R">R</string>
+    <string name="S">S</string>
+    <string name="T">T</string>
+    <string name="U">U</string>
+    <string name="V">V</string>
+    <string name="W">W</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Z">Z</string>
+    <string name="Æ">Æ</string>
+    <string name="Ø">Ø</string>
+    <string name="Å">Å</string>
+    <string name="exitGame">ADVARSEL</string>
+    <string name="exitGameText">Du er i ferd med å avslutte spillet. Klikk JA for å bekrefte</string>
+
+</resources>

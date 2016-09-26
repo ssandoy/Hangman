@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WORDS">
+        <item>SKOSÅLE</item>
+        <item>BANANER</item>
+        <item>LØVETEMMER</item>
+        <item>GANGVEI</item>
+        <item>SMUGLERGODS</item>
+        <item>GULROTKAKE</item>
+        <item>MATEMATIKK</item>
+        <item>KAFFEKOPP</item>
+        <item>OSTEPOP</item>
+        <item>DATAMASKIN</item>
+        <item>DATABASE</item>
+    </string-array>
+</resources>

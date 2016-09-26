@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hangmanboardv2"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical" tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:id="@+id/linearLayout">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/gametitle"
+            android:text="@string/gametitle"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:id="@+id/tableLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="30dp">
+        <TableRow android:layout_width="match_parent"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/playButton"
+                android:layout_width="290dp"
+                android:text="@string/playgame"
+                android:background="@null"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/rulesButton"
+                android:text="@string/rules"
+                android:layout_width="290dp"
+                android:background="@null"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/langButton"
+                android:text="@string/language"
+                android:layout_width="290dp"
+                android:background="@null"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/exitButton"
+                android:text="@string/exit"
+                android:layout_width="290dp"
+                android:background="@null"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tableLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout">
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/hangmanicon"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:background="@null" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

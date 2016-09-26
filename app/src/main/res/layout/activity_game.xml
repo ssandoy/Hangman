@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/hangmanboardv2"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ssandoy.s236305.GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statView"
+        android:layout_above="@+id/spillPlass"
+        android:layout_marginBottom="25dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:id="@+id/returnArrow"
+            android:src="@drawable/whitearrow"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/statwin"
+            android:text="@string/wins"
+            android:background="@null"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="20dp"
+            android:id="@+id/stattap"
+            android:text="@string/losses"
+            android:background="@null"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textIsSelectable="false" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:id="@+id/spillPlass"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:src="@drawable/hangman6"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/gallows"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="15dp" />
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLayout"
+        android:layout_below="@+id/wordView"
+        android:layout_alignParentEnd="true">
+        <TableRow android:gravity="center_horizontal">
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/A"
+                android:id="@+id/Abutton"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="1"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/B"
+                android:id="@+id/Bbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="2"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/C"
+                android:id="@+id/Cbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="3"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/D"
+                android:id="@+id/Dbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="4"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/E"
+                android:id="@+id/Ebutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="5"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/F"
+                android:id="@+id/Fbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="6"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/G"
+                android:id="@+id/Gbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="7"
+                android:textSize="20sp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/H"
+                android:id="@+id/Hbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="1"
+                android:textSize="20sp" />
+
+        </TableRow>
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/I"
+                android:id="@+id/Ibutton"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="1"
+                android:textSize="20sp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/J"
+                android:id="@+id/Jbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="2"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/K"
+                android:id="@+id/Kbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="3"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/L"
+                android:id="@+id/Lbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="4"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/M"
+                android:id="@+id/Mbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="5"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/N"
+                android:id="@+id/Nbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="6"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/O"
+                android:id="@+id/Obutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="7"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/P"
+                android:id="@+id/Pbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="8"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow android:gravity="center_horizontal">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/Q"
+                android:id="@+id/Qbutton"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="1"
+                android:textSize="20sp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/R"
+                android:id="@+id/Rbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="2"
+                android:textSize="20sp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/S"
+                android:id="@+id/Sbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="3"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/T"
+                android:id="@+id/Tbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="4"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/U"
+                android:id="@+id/Ubutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="5"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/V"
+                android:id="@+id/Vbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="6"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/W"
+                android:id="@+id/Wbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="7"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/X"
+                android:id="@+id/Xbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="8"
+                android:textSize="20sp" />
+
+        </TableRow>
+        <TableRow android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/Y"
+                android:id="@+id/Ybutton"
+                android:layout_marginStart="5dp"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="1"
+                android:textSize="20sp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="@string/Z"
+                android:id="@+id/Zbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="2"
+                android:textSize="20sp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="Æ"
+                android:id="@+id/Æbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="3"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="Ø"
+                android:id="@+id/Øbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="4"
+                android:textSize="20sp" />
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:text="Å"
+                android:id="@+id/Åbutton"
+                android:textColor="#FFFFFF"
+                android:onClick="buttonClick"
+                android:background="@android:color/transparent"
+                android:textStyle="bold|italic"
+                android:layout_column="5"
+                android:textSize="20sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wordView"
+        android:text="_ _ _ _ _ _ _ "
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/spillPlass"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

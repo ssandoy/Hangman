@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WORDS">
+        <item>ANDROID</item>
+        <item>BAGPIPES</item>
+        <item>UNIVERSITY</item>
+        <item>FOOTBALL</item>
+        <item>BUFFALO</item>
+        <item>KILOBYTE</item>
+        <item>RAZZMATAZZ</item>
+        <item>UNKNOWN</item>
+        <item>MICROWAVE</item>
+        <item>DATABASE</item>
+        <item>APPLICATION</item>
+    </string-array>
+</resources>

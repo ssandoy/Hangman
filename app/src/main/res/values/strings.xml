@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">s236305</string>
+    <string name="gametitle">School Hangman</string>
+    <string name="playgame">PLAY GAME</string>
+    <string name="rules">RULES</string>
+    <string name="hangmanRulesVertical">
+        1. The application sets a word for you to guess and draws up the gallows. \n\n
+        2. User guesses a character from the alphabet \n\n
+        3. The application determines if the character is in the word, and either draws the next step
+        or fills the wordview with the correct letter in the right place.\n\n
+        4. This continues either until the hangman is hanged or the word is guessed.
+
+    </string>
+    <string name="hangmanRulesHorizonal">
+      1. The application sets a word for you to guess and draws up the gallows. \n\n
+        2. User guesses a character from the alphabet \n\n
+        3. The application determines if the character is in the word, and either draws the next step
+        or fills the wordview with the correct letter in the right place.\n\n
+        4. This continues either until the hangman is hanged or the word is guessed.
+
+    </string>
+    <string name="language">LANGUAGE</string>
+    <string name="exit">EXIT APPLICATION</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="ok">OK</string>
+    <string name="gameover">GAME OVER</string>
+    <string name="gamewon">GAME WON</string>
+    <string name="usedUpWords">YOU HAVE USED ALL THE WORDS IN THE GAME</string>
+    <string name="returnToStart">You will be sent back to start</string>
+    <string name="word">The word was:  </string>
+    <string name="fortsette">Do you want to play another game?</string>
+    <string name="wins">Victories:</string>
+    <string name="losses">Losses:</string>
+    <string name="langText">PLEASE SELECT DESIRED LANGUAGE</string>
+    <string name="A">A</string>
+    <string name="B">B</string>
+    <string name="C">C</string>
+    <string name="D">D</string>
+    <string name="E">E</string>
+    <string name="F">F</string>
+    <string name="G">G</string>
+    <string name="H">H</string>
+    <string name="I">I</string>
+    <string name="J">J</string>
+    <string name="K">K</string>
+    <string name="L">L</string>
+    <string name="M">M</string>
+    <string name="N">N</string>
+    <string name="O">O</string>
+    <string name="P">P</string>
+    <string name="Q">Q</string>
+    <string name="R">R</string>
+    <string name="S">S</string>
+    <string name="T">T</string>
+    <string name="U">U</string>
+    <string name="V">V</string>
+    <string name="W">W</string>
+    <string name="X">X</string>
+    <string name="Y">Y</string>
+    <string name="Z">Z</string>
+    <string name="exitGame">WARNING</string>
+    <string name="exitGameText">You are about to exit the current game. Are you sure?</string>
+
+
+</resources>
